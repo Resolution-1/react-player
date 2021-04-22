@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+
+.login-container {
+  max-width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://getwallpapers.com/wallpaper/full/8/9/4/977370-widescreen-desktop-background-music-1920x1080-for-computer.jpg');
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: top;
+
+  .login-button {
+    border-radius: 0 !important;
+    font-family: 'Coda Caption', sans-serif;
+    border: 3px solid white !important;
+  }
+}
