@@ -1,0 +1,65 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .dashboard-search {
+    background: rgba(255, 255, 255, 0.747);
+    opacity: 0.9;
+    margin-top: 20px;
+    border: none;
+    border-radius: 0;
+    padding: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    // border: 3px solid #1db954 !important;
+
+    &:active,
+    &:focus {
+      background: white;
+      transition: 0.2s all ease-in;
+    }
+    &::placeholder {
+      letter-spacing: 0.2rem;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+  .songs {
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // flex-grow: 1;
+    overflow: auto;
+    margin-top: 10px;
+    color: rgb(248, 248, 255);
+    // & > * {
+    //   flex: 1 1 33%;
+    // }
+  }
+}
+
+.dashboard-wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url('https://www.wallpapers4u.org/wp-content/uploads/surface_grid_background_bright_38051_1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.effect-1 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #4caf50;
+  transition: 0.4s;
+}
+.effect-1:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s ease-in;
+}
